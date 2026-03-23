@@ -41,7 +41,10 @@ public class ProcessingRunRepository : IProcessingRunRepository
 
     public async Task UpdateAsync(ProcessingRun run)
     {
-        _context.ProcessingRuns.Update(run);
+        if (_context.Entry(run).State == EntityState.Detached)
+        {
+            _context.ProcessingRuns.Update(run);
+        }
         await _context.SaveChangesAsync();
     }
 
