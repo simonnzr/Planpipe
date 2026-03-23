@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Planpipe.Api/Planpipe.Api.csproj" />
+    <Project Path="src/Planpipe.Application/Planpipe.Application.csproj" />
+    <Project Path="src/Planpipe.Core/Planpipe.Core.csproj" />
+    <Project Path="src/Planpipe.Infrastructure/Planpipe.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Planpipe.IntegrationTests/Planpipe.IntegrationTests.csproj" />
+    <Project Path="tests/Planpipe.UnitTests/Planpipe.UnitTests.csproj" />
+  </Folder>
+</Solution>
